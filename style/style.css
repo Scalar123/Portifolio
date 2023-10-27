@@ -71,6 +71,13 @@ header section{
     margin-bottom: 10px;
     text-decoration: underline;
 }
+#nav-header a img{
+    width: 17px;
+    height: 17px;
+    margin-right: 3px;
+}
+
+
 
 /* Fim do header */
 
@@ -81,3 +88,4 @@ main{
     margin: var(--margin-padrao-centro);
     padding: 10px;
 }
+
