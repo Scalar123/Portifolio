@@ -11,11 +11,20 @@
     min-width:120px; max-width: 1024px*/
     --width-padrao: 85%;
     --margin-padrao-centro: 0px auto;
+    --cor-roxa:  rgb(86, 21, 147);
+    --cor-roxa2: rgb(103, 19, 182) ;
+    --cor-roxa3: rgb(79, 46, 109);
+    --cor-roxa4: rgb(38, 1, 73);
+    --cor-roxa5: rgb(0, 0, 0);
+
+    --cor-back:rgb(255, 255, 255) ; 
+
 }
 
 body{
     font-family: "roboto";
-    color: rgb(86, 21, 147);
+    color: var(--cor-roxa);
+    background-color: var(--cor-back);
 }
 
 /* Todos as divisao semanticas irao tem o mesmo tamanho */
@@ -77,12 +86,19 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 10px;
 }
 
-#main-sec-fig-gradson img{
-    height: inherit;
-    width: inherit;
+#profile{
+    min-width: 70px;
+    max-width: 260px;
     border-radius: 50%;
+    animation: changebordercolor 10s ease-in-out infinite alternate;
+    
+}
+
+#profile:hover{
+    /* transform: scale(50%, 50%); */
 }
 
 
@@ -92,7 +108,18 @@ main{
 
 #cargo{
     font-size: 25px;
+    
 }
+
+#apresentacao{
+    display: inline;
+}
+
+address{
+    display: inline;
+}
+
+
 
 #nav-header{
     position: relative;
@@ -111,7 +138,6 @@ main{
 
 #nav-header a{
     text-decoration: none;
-    text-shadow: 1px 1px 2px rgba(49, 10, 56, 0.582);
 }
 
 /* Animanto quando passar o mouse por cimas do link do header */
@@ -119,10 +145,61 @@ main{
 #nav-header a:hover{
     margin-bottom: 10px;
     text-decoration: underline;
+    
 }
 #nav-header a img{
     width: 17px;
     height: 17px;
     margin-right: 0px 3px 0px 0px;
 
+}
+
+
+#sec-seta{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 140px;
+}
+
+
+#seta{
+    animation: pulando 1s cubic-bezier(0.36, 0, 0.66, -0.56) infinite alternate;
+}
+ 
+@keyframes pulando {
+    to{
+        transform: translateY(15px);
+    }
+}
+
+@keyframes changebordercolor {
+    0%{
+        border: 5px solid var(--cor-roxa);
+    }
+
+    25%{
+        border: 5px solid  var(--cor-roxa2);
+    }
+    50%{
+        border: 5px solid  var(--cor-roxa3);
+    }
+    75%{
+        border: 5px solid  var(--cor-roxa4);
+    }
+
+    100%{
+        border:  5px solid var(--cor-roxa5);
+    }
+}
+
+
+
+
+#projetos{
+    margin-top: 50px;
+}
+
+.titulo{
+    text-align: center;
 }
