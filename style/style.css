@@ -14,7 +14,7 @@
     --cor-roxa:  rgb(86, 21, 147);
     --cor-roxa2: rgb(103, 19, 182) ;
     --cor-roxa3: rgb(79, 46, 109);
-    --cor-roxa4: rgb(38, 1, 73);
+    --cor-roxa4: rgb(72, 7, 132);
     --cor-roxa5: rgb(0, 0, 0);
 
     --cor-back:rgb(255, 255, 255) ; 
@@ -64,7 +64,6 @@ header section{
 
 
 main{
-
     min-width: 120px;
     max-width: 1050px;
     margin: var(--margin-padrao-centro);
@@ -73,29 +72,36 @@ main{
 
 #main-sec-dad{
     display: block;
-    
+    margin: inherit;
+    height: inherit;
     padding-top: 50px;
 }
 
 #main-sec-son{
     display: flex;
+    min-width: inherit;
+    max-width: inherit;
 }
 
 
 #main-sec-fig-gradson{
     display: flex;
+    min-width: 130px;
+    max-width: 260px;
     justify-content: center;
     align-items: center;
     margin-right: 10px;
+    
 }
 
 #profile{
-    min-width: 70px;
-    max-width: 260px;
+    min-width: inherit;
+    max-width: inherit;
     border-radius: 50%;
     animation: changebordercolor 10s ease-in-out infinite alternate;
     
 }
+
 
 #profile:hover{
     /* transform: scale(50%, 50%); */
@@ -123,7 +129,7 @@ address{
 
 #nav-header{
     position: relative;
-    top: 100px;
+    top: 55px;
     font-size: 19px;
 }
 
@@ -197,9 +203,72 @@ address{
 
 
 #projetos{
-    margin-top: 50px;
+    min-width: 150px;
+    max-width: 1050px;
+    display: grid;
+    margin-top: 25px ;
 }
 
-.titulo{
+#div-titulo{
+    margin-bottom: 20px;
     text-align: center;
+}
+
+#sec-square-projeto{
+    display: flex;
+    min-width: 150px;
+    max-width: 1050px;
+    justify-content: center;
+    
+}
+
+#sec-square-projeto > .div-square-projeto > div {
+    width: 23vw;
+    height: 14vw;
+    border: 2px solid black;
+    margin: 3px 10px 5px 5px;
+}
+
+
+.square-soon{
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor-roxa3);
+    box-shadow: 5px 5px 5px black;
+}
+
+.square-soon > div{
+    border: 2px solid black;
+    background-color: var(--cor-roxa4);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.right-side{
+    transform: rotate(47deg);
+    margin: 0px;
+    width: 5%;
+}
+.left-side{
+    transform: rotate(-47deg);
+    margin: 0px;
+    width: 5%;
+}
+
+#sec-square-projeto > .div-square-projeto > div > img{
+    width: 110%;
+}
+
+
+.align-center{
+    align-items: center;
+    
+}
+.align-center > div{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    width: 100%;
+    height: 50px;
+    color: var(--cor-roxa5);
 }
