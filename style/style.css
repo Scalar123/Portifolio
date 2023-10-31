@@ -11,17 +11,17 @@
     min-width:120px; max-width: 1024px*/
     --width-padrao: 85%;
     --margin-padrao-centro: 0px auto;
-    --cor-roxa:  rgb(86, 21, 147);
-    --cor-roxa2: rgb(103, 19, 182) ;
+    --cor-roxa: rgb(86, 21, 147);
+    --cor-roxa2: rgb(103, 19, 182);
     --cor-roxa3: rgb(79, 46, 109);
     --cor-roxa4: rgb(72, 7, 132);
     --cor-roxa5: rgb(0, 0, 0);
 
-    --cor-back:rgb(255, 255, 255) ; 
+    --cor-back: rgb(255, 255, 255);
 
 }
 
-body{
+body {
     font-family: "roboto";
     color: var(--cor-roxa);
     background-color: var(--cor-back);
@@ -31,12 +31,13 @@ body{
 
 /* tamanho e posicionamento do header */
 
-header section{
+header section {
     /* Pode trocar para min-width e max-width*/
     /* width: var(--width-padrao); ou por %*/
     min-width: 120px;
     max-width: 1050px;
-    margin: var(--margin-padrao-centro);;
+    margin: var(--margin-padrao-centro);
+    ;
     padding: 10px;
     height: 100px;
     font-size: 18px;
@@ -44,15 +45,16 @@ header section{
 }
 
 /* Transfomando o header em flex e alinhando os items */
-#flex-header{
+#flex-header {
     display: flex;
     align-items: center;
 }
 
 
-#name-header{
+#name-header {
     font-size: 25px;
 }
+
 /* Personalinado e posicionado os item da navegação do header
 #nav-header,#div-header{
 }
@@ -63,43 +65,43 @@ header section{
 /* Fim do header */
 
 
-main{
+main {
     min-width: 120px;
     max-width: 1050px;
     margin: var(--margin-padrao-centro);
     padding: 10px;
 }
 
-#main-sec-dad{
+#main-sec-dad {
     display: block;
     margin: inherit;
     height: inherit;
     padding-top: 50px;
 }
 
-#main-sec-son{
+#main-sec-son {
     display: flex;
     min-width: inherit;
     max-width: inherit;
 }
 
 
-#main-sec-fig-gradson{
+#main-sec-fig-gradson {
     display: flex;
     min-width: 130px;
     max-width: 260px;
     justify-content: center;
     align-items: center;
     margin-right: 10px;
-    
+
 }
 
-#profile{
+#profile {
     min-width: inherit;
     max-width: inherit;
     border-radius: 50%;
     animation: changebordercolor 10s ease-in-out infinite alternate;
-    
+
 }
 
 
@@ -108,52 +110,53 @@ main{
 } 
 */
 
-#name{
+#name {
     font-size: 20px;
 }
 
-#cargo{
+#cargo {
     font-size: 25px;
-    
+
 }
 
-#apresentacao{
+#apresentacao {
     display: inline;
 }
 
-address{
+address {
     display: inline;
 }
 
 
 
-#nav-header{
+#nav-header {
     position: relative;
     top: 55px;
     font-size: 19px;
 }
 
-#nav-header ul{
+#nav-header ul {
     display: flex;
     list-style: none;
 }
 
-#nav-header ul li{
-   width: 110px;
+#nav-header ul li {
+    width: 110px;
 }
 
-#nav-header a{
+#nav-header a {
     text-decoration: none;
 }
 
 /* Animanto quando passar o mouse por cimas do link do header */
 
-#nav-header a:hover{
+#nav-header a:hover {
     margin-bottom: 10px;
     text-decoration: underline;
-    
+
 }
-#nav-header a img{
+
+#nav-header a img {
     width: 17px;
     height: 17px;
     margin-right: 0px 3px 0px 0px;
@@ -161,7 +164,7 @@ address{
 }
 
 
-#sec-seta{
+#sec-seta {
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -169,60 +172,66 @@ address{
 }
 
 
-#seta{
+#seta {
     animation: pulando 1s cubic-bezier(0.36, 0, 0.66, -0.56) infinite alternate;
 }
- 
+
 @keyframes pulando {
-    to{
+    to {
         transform: translateY(15px);
     }
 }
 
 @keyframes changebordercolor {
-    0%{
+    0% {
         border: 5px solid var(--cor-roxa);
     }
 
-    25%{
-        border: 5px solid  var(--cor-roxa2);
-    }
-    50%{
-        border: 5px solid  var(--cor-roxa3);
-    }
-    75%{
-        border: 5px solid  var(--cor-roxa4);
+    25% {
+        border: 5px solid var(--cor-roxa2);
     }
 
-    100%{
-        border:  5px solid var(--cor-roxa5);
+    50% {
+        border: 5px solid var(--cor-roxa3);
+    }
+
+    75% {
+        border: 5px solid var(--cor-roxa4);
+    }
+
+    100% {
+        border: 5px solid var(--cor-roxa5);
     }
 }
 
 
 
 
-#projetos{
+#projetos {
     min-width: 150px;
     max-width: 1050px;
     display: grid;
-    margin-top: 25px ;
+    margin-top: 25px;
 }
 
-#div-titulo{
+#div-titulo {
     margin-bottom: 20px;
     text-align: center;
 }
 
-#sec-square-projeto{
+.titulo {
+    font-size: 30px;
+}
+
+#sec-square-projeto {
     display: flex;
     min-width: 150px;
     max-width: 1050px;
     justify-content: center;
-    
+
 }
 
-#sec-square-projeto > .div-square-projeto > div {
+#sec-square-projeto>.div-square-projeto>div {
     width: 23vw;
     height: 14vw;
     border: 2px solid black;
@@ -230,7 +239,7 @@ address{
 }
 
 
-.square-soon{
+.square-soon {
     display: flex;
     justify-content: center;
     background-color: var(--cor-roxa3);
@@ -238,34 +247,37 @@ address{
     border-radius: 15px;
 }
 
-.square-soon > div{
+.square-soon>div {
     border: 2px solid black;
     background-color: var(--cor-roxa4);
     display: flex;
     align-items: flex-start;
     justify-content: center;
 }
-.right-side{
+
+.right-side {
     transform: rotate(47deg);
     margin: 0px;
     width: 5%;
 }
-.left-side{
+
+.left-side {
     transform: rotate(-47deg);
     margin: 0px;
     width: 5%;
 }
 
-#sec-square-projeto > .div-square-projeto > div > img{
+#sec-square-projeto>.div-square-projeto>div>img {
     width: 110%;
 }
 
 
-.align-center{
+.align-center {
     align-items: center;
-    
+
 }
-.align-center > div{
+
+.align-center>div {
     display: flex;
     align-items: center;
     font-size: 2.3vw;
