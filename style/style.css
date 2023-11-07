@@ -228,12 +228,13 @@ address {
     min-width: 150px;
     max-width: 1050px;
     justify-content: center;
+    flex-wrap: wrap;
 
 }
 
 #sec-square-projeto>.div-square-projeto>div {
-    width: 23vw;
-    height: 14vw;
+    width: 25vw;
+    height: 15vw;
     border: 2px solid black;
     margin: 3px 10px 5px 5px;
 }
@@ -245,6 +246,7 @@ address {
     background-color: var(--cor-roxa3);
     box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.653);
     border-radius: 15px;
+    flex-wrap: wrap;
 }
 
 .square-soon>div {
