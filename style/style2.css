@@ -12,24 +12,26 @@
 }
 
 #section-header{
+    font-variant: small-caps;
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-width: var(--min--width);
     max-width: var(--max--width);
     margin: var(--margin-center-sections);
-    padding: 30px;
+    padding-top: 10vh ;
+    padding-bottom: 10vh;
     
 }
 
 #titulo-header{
-    /*Font-family:;*/
+    
     font-size: var(--tamanho-titulos); 
 }
 
 #titulo-header a{
     text-decoration: none;
-    color: #000;
+    color: black;
 }
 
 
@@ -44,7 +46,7 @@
 #nav-header ol li a {
     border-radius: 15px;
     text-decoration: none;
-    color: #000;
+    color: black;
     padding: 5px;
 }
 
@@ -53,3 +55,4 @@
     background-color: rgba(140, 104, 104, 0.902);
 }
 
+/* Main */
