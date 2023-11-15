@@ -11,7 +11,7 @@
     --tamanho-textos: clamp(1rem, 1.4vw, 2rem );
 }
 
-#section-header{
+#section-header, #section-main, #section-footer{
     font-variant: small-caps;
     display: flex;
     justify-content: space-between;
@@ -25,7 +25,6 @@
 }
 
 #titulo-header{
-    
     font-size: var(--tamanho-titulos); 
 }
 
@@ -52,7 +51,14 @@
 
 #nav-header ol li a:hover{
     text-decoration: underline;
-    background-color: rgba(140, 104, 104, 0.902);
+    background-color: rgba(232, 95, 95, 0.902);
+    box-shadow: 2px 2px 5px rgba(232, 95, 95, 0.902) ;
 }
 
 /* Main */
+
+main{
+    background-color: black;
+    min-height: 74.3vh;
+    max-height: 100vh;
+}
