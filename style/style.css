@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    width: 100vw;
+    background-color: bisque;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 2px solid black;
+    
+}       
+
+#flex_header{
+    width: 52%;
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    box-shadow: 5px 5px 5px black;
+}
+
+#list_header{
+    list-style: none;
+    background-color: red;
+    padding: 5px;
+    border-radius: 5px 5px;
+    box-shadow: 2px 2px 2px black;
+}
+
+
+#show > div{
+    display: none;
+}
+
+#show:hover > div{
+    display: inline;
+}
+
+#show:hover > p{
+    display: none;
+}
+
+
+main{
+    background-color: bisque;
+}
+
+footer{
+    background-color: bisque;
+}
+
