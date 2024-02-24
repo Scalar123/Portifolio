@@ -35,12 +35,12 @@ header{
 
 #section-header-first{
     width: 90%;
-    height: 70px;
-    border: 2px solid white;
+    min-height: 9.3vh;
     padding: 10px ;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #name_header{
@@ -72,4 +72,24 @@ header a{
 }
 
 
+#div1_main{
+    height: 38vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
 
+#div1_main h1{
+    font-size: 35px;
+}
+
+pre > a{
+    text-decoration: none;
+}
+
+#div2_main{
+    height: 46.5vh;
+    background-color: blue;
+    margin: 25px 0px;
+}
