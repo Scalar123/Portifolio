@@ -9,6 +9,7 @@
     --color--yellow: rgb(255, 225, 0);
     --color--blue:  rgb(6, 230, 255);
     --font-normal: "Kode Mono";
+    --font-size--cab2: 1.7rem;
 }
 
 .puple{
@@ -71,13 +72,19 @@ header a{
     color: var(--color--puple);
 }
 
+.justify_center_main{
+    display: flex;
+    justify-content: center;
+}
 
 #div1_main{
+    width: 100%;
     height: 38vh;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     flex-direction: column;
+    margin: 0px 0px 25px;
 }
 
 #div1_main h1{
@@ -88,8 +95,61 @@ pre > a{
     text-decoration: none;
 }
 
-#div2_main{
+#div_main_background{
+    width: 90%;
     height: 46.5vh;
-    background-color: blue;
-    margin: 25px 0px;
+    background-image: url(../imagens/Setor-de-Health-Tech-cresce-no-Brasil.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+#div_main_aboutme{
+    display: flex;
+    justify-content: center;
+    margin: 80px 0px 0px;
+}
+
+#div2_aboutme{
+    width: 90%;
+}
+
+.sub_header{
+    font-size: var(--font-size--cab2);
+    text-align: center;
+}
+
+#two_div_aboutme{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    
+}
+
+#two_div_aboutme p{
+    color: var(--color--yellow);
+}
+
+.first_square{
+    border-top: 1px solid rgba(255, 255, 255, 0.402) ;
+    border-right: 1px solid rgba(255, 255, 255, 0.402) ;
+    padding: 50px;
+}
+
+.second_square{
+    border-top: 1px solid rgba(255, 255, 255, 0.402) ;
+    border-left: 1px solid rgba(255, 255, 255, 0.402) ;
+    padding: 50px;
+}
+
+#div_readmore{
+    display: flex;
+    justify-content: center;
+}
+
+#link_readmore{
+    background-color: var(--color--blue);
+    text-decoration: none;
+    padding: 15px 40px;
 }
