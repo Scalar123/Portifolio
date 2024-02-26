@@ -1,165 +1,182 @@
-*{
-    margin: 0;
-    padding: 0;
-    color: white;
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
 }
 
-:root{
-    --color--puple: rgb(138, 13, 138);
-    --color--yellow: rgb(255, 225, 0);
-    --color--blue:  rgb(6, 230, 255);
-    --font-normal: "Kode Mono";
-    --font-size-big: clamp(23px, 2.5vw, 40px);
-    --font-size-medio: clamp( 15px, 1.6vw, 30px);
-    --font-size-small: clamp(5px, 1.2vw, 20px);
+:root {
+  --color--puple: rgb(138, 13, 138);
+  --color--yellow: rgb(255, 225, 0);
+  --color--blue: rgb(6, 230, 255);
+  --font-normal: "Kode Mono";
+  --font-size-big: clamp(18px, 2.7vw, 40px);
+  --font-size-medio: clamp(15px, 1.8vw, 30px);
+  --font-size-small: clamp(12px, 1.2vw, 20px);
 }
 
-main  p{
-    font-size: var(--font-size-small);
+main p {
+  font-size: var(--font-size-small);
 }
 
-
-.font_size_big{
-    font-size: var(--font-size-big);
+.font_size_big {
+  font-size: var(--font-size-big);
 }
 
-.font_size_medio{
-    font-size: var(--font-size-medio);
+.font_size_medio {
+  font-size: var(--font-size-medio);
 }
 
-.puple{
-    color: var(--color--one);
+.puple {
+  color: var(--color--one);
 }
 
-.blue{
-    color: var(--color--blue);
+.blue {
+  color: var(--color--blue);
 }
 
-.yellow{
-    color: var(--color--yellow);
+.yellow {
+  color: var(--color--yellow);
 }
 
-body{
-    background-color: #212121;
-    font-family: var(--font-normal);
+body {
+  background-color: #212121;
+  font-family: var(--font-normal);
 }
 
-header{
+header {
+  display: flex;
+  justify-content: center;
+}
+
+#section-header-first {
+  width: 90%;
+  min-height: 9.3vh;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#name_header {
+  font-size: 1.1em;
+}
+
+#Area_header {
+  margin-left: 35px;
+  font-size: 0.8em;
+}
+
+#div_ul {
+  margin-right: 20px;
+}
+
+#ul_header {
+  display: flex;
+  column-gap: 45px;
+  flex-wrap: wrap;
+  list-style: none;
+}
+header a {
+  text-decoration: none;
+}
+
+#ul_header > li > a:hover {
+  color: var(--color--puple);
+}
+
+@media (max-width: 800px) {
+  #ul_header {
+    display: inline;
+  }
+}
+.justify_center_main {
+  display: flex;
+  justify-content: center;
+}
+
+#div1_main {
+  width: 100%;
+  height: 38vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  margin: 0px 0px 25px;
+}
+
+pre > a {
+  text-decoration: none;
+}
+
+#div_main_background {
+  width: 90%;
+  height: 46.5vh;
+  background-image: url(../imagens/Setor-de-Health-Tech-cresce-no-Brasil.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+#div_main_aboutme {
+  display: flex;
+  justify-content: center;
+  margin: 80px 0px 0px;
+}
+
+#div2_aboutme {
+  width: 90%;
+}
+
+.sub_header {
+  text-align: center;
+}
+
+#two_div_aboutme {
+  display: flex;
+  margin-top: 40px;
+}
+
+@media (max-width: 800px) {
+  #two_div_aboutme {
     display: flex;
-    justify-content: center;
-}
-
-#section-header-first{
-    width: 90%;
-    min-height: 9.3vh;
-    padding: 10px ;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-#name_header{
-    font-size: 1.1em;
-}
-
-#Area_header{
-    margin-left: 35px;
-    font-size: 0.8em;
-}
-
-#div_ul{
-    margin-right: 20px;
-}
-
-#ul_header{
-    display: flex;
-    column-gap: 45px;
-    flex-wrap: wrap; 
-    list-style: none;
-    
-}
-header a{
-    text-decoration: none;
-}
-
-#ul_header > li > a:hover{
-    color: var(--color--puple);
-}
-
-.justify_center_main{
-    display: flex;
-    justify-content: center;
-}
-
-#div1_main{
-    width: 100%;
-    height: 38vh;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-direction: column;
-    margin: 0px 0px 25px;
-}
-
-pre > a{
-    text-decoration: none;
-}
-
-#div_main_background{
-    width: 90%;
-    height: 46.5vh;
-    background-image: url(../imagens/Setor-de-Health-Tech-cresce-no-Brasil.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-}
-
-#div_main_aboutme{
-    display: flex;
-    justify-content: center;
-    margin: 80px 0px 0px;
-}
-
-#div2_aboutme{
-    width: 90%;
-}
-
-.sub_header{
-    text-align: center;
-}
-
-#two_div_aboutme{
-    display: flex;
-    flex-direction: row;
     margin-top: 40px;
-    
+    flex-wrap: wrap;
+  }
+
+  .first_square {
+    border: 1px solid rgba(255, 255, 255, 0.402);
+  }
+
+  .second_square {
+    border: 1px solid rgba(255, 255, 255, 0.402);
+  }
 }
 
-#two_div_aboutme p{
-    color: var(--color--yellow);
+#two_div_aboutme p {
+  color: var(--color--yellow);
 }
 
-.first_square{
-    border-top: 1px solid rgba(255, 255, 255, 0.402) ;
-    border-right: 1px solid rgba(255, 255, 255, 0.402) ;
-    padding: 50px;
+.first_square {
+  border-top: 1px solid rgba(255, 255, 255, 0.402);
+  border-right: 1px solid rgba(255, 255, 255, 0.402);
+  padding: 1em;
 }
 
-.second_square{
-    border-top: 1px solid rgba(255, 255, 255, 0.402) ;
-    border-left: 1px solid rgba(255, 255, 255, 0.402) ;
-    padding: 50px;
+.second_square {
+  border-top: 1px solid rgba(255, 255, 255, 0.402);
+  border-left: 1px solid rgba(255, 255, 255, 0.402);
+  padding: 1em;
 }
 
-#div_readmore{
-    display: flex;
-    justify-content: center;
+#div_readmore {
+  display: flex;
+  justify-content: center;
 }
 
-#link_readmore{
-    background-color: var(--color--blue);
-    text-decoration: none;
-    padding: 15px 40px;
+#link_readmore {
+  background-color: var(--color--blue);
+  text-decoration: none;
+  padding: 15px 40px;
 }
