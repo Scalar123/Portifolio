@@ -3,40 +3,94 @@
     padding: 0;
 }
 
-body {
-    margin: auto;
-    width: 85vw;
-    min-width: 200px;
-} 
+@font-face {
+    font-family: River;
+    src: url(../font/blank_river/Blank\ River.ttf);
+}
 
-/* Edição do cabeçalho */
+html, body{
+    height: 100%;
+}
 
-#alinhar_item_header{
+header{
+    height: 100%;
+    font-family: River;
+    letter-spacing: 4px;
+}
+
+
+.background-full-page{
+    background: url(../img/backheader.jpg) no-repeat center center;
+    background-attachment: fixed ;
+    background-size: cover;
+    
+}
+
+#section-header{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    background-color: #ffa600ea;
+    height: 100%;
+}
+
+
+
+.profile-thumb {
+    background: url(../img/) center center;
+    background-size: cover;
+    position: relative;
+    bottom: 60px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;    
+    box-shadow: 1px 3px 2px #9c6704;
+    background-color: red;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 400px) {
+    .profile-thumb{
+        width: 35vw; /* 100px*/
+        height: 35vw; /* 100px*/
+    }
+}
+
+#name-thumb{
+    font-size: 60px;
+    position: relative;
+    font-family: River;
+    transform: rotate(-10deg);
+    bottom: 40px;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.min-width-section{
+    display: flex;
+    justify-content: center;
     align-items: center;
+    height: 100%;
+    width: 1200px;
+    /* margin:auto; */
 }
-
-.design_header{
-    padding: 20px;
-    background-color: aqua;
-}
-
-
-/* Inicio edição links do cabeçãlho */
-.responsive_list_full {
-    display: flex;
-    gap: 30px;
-}
-
-.responsive_list_half {
-    display: inline;
-}
-
-#lista_nav li {
+header ul {
+    padding: 0;
     list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    bottom: 25px;
+    position: relative; 
 }
 
-#lista_nav a {
-    color: black;
+header li {
+    font-size: clamp(18px,1.9vw,2.5vw);
+    text-shadow: 0px 1px 1px #000;
+}
+
+header li a{
+    text-decoration: none;
+    color: #565656;
+
 }
