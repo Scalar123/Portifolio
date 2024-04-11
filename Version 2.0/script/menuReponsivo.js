@@ -13,9 +13,11 @@ function resp(){
         img_header.className = "oculta"
     }
 
+
+
 }
 window.addEventListener("resize", resp)
-
+var btn = document.getElementById("btn")
 
 
 
