@@ -8,65 +8,65 @@
     src: url(../font/blank_river/Blank\ River.ttf);
 }
 
+html {
+    background-color: rgba(58, 58, 186, 0.596);
+}
+
 body {
     font-family: river , system-ui,  'Segoe UI',  'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 header {
-    background: url(../img/graffiti_wall_inscription_141513_1600x900.jpg) center center;
+    background: url(../img/) center center;
     background-size: cover;
-    background-attachment: fixed;
+    border-bottom: 1px solid orange;
 }
 
-#backgroundWithColor {
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(rgba(58, 58, 186, 0.596), rgba(31, 28, 28, 0.589));
+
+.textcenter {
+    text-align: center;
 }
 
-.container {
-    width: 85%;
-    height: inherit;
-    margin: 0 auto;
+.backgroundWithColor {
+    background: linear-gradient(rgba(58, 58, 186, 0.596), rgb(198, 197, 255));
 }
 
-.flexCenterColunm {
+.fullHeight {
+    height: 100vh; 
+}
+
+.grid {
+    display: grid;
+}
+
+h1 {
+    font-size: clamp(14px, 10vw, 40px);
+    color: rgb(240, 168, 34);
+}
+
+
+.flex-header, .flexcenter {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#contentHeader {
-   
-}
+
+
 
 #Profile {
-    width: 210px;
-    height: 210px;
-    background: url(../img/WhatsApp\ Image\ 2024-04-10\ at\ 21.34.35_e671bb24.jpg) center center ;
+    width: 35vw;
+    height: 35vw;
+    background: url(../img/Thumb.jpg) center center ;
     background-size: cover;
     border-radius: 50%;
-    box-shadow: 3px 2px 4px rgba(255, 166, 0, 0.61);
-    text-indent: 999999px;
-}
-
-#Profile:hover {
-    transform: scale(1.1);
-    text-shadow: 5px 5px 5px rgba(255, 166, 0, 0.826);
-    transition: 0.5s ease-in-out;
 }
 
 #contentHeader h1{
-    font-size: 70px;
+    font-size: 10vw;
     color: rgb(240, 168, 34);
     transform: rotate(-8deg);
-}
-
-#contentHeader h1:hover{
-    transform: scale(1.2 ) rotate(-8deg);
-    text-shadow: 2px 2px 2px black;
-    transition: 0.5s ease-in-out;
 }
 
 ul {
@@ -75,55 +75,215 @@ ul {
 }
 
 #contentHeader ul li{
-    font-size: 30px;
-    display: inline-block;
-    margin: 0px 10px;
+    font-size: 5vw;
+    display: block;
+    margin: 5px 10px;
 }
-
 
 .icon {
-    width: 35px;
-    height: 35px;
+    width: 6vw;
+    height: 6vw;
     margin: 0 6.5px;
-}
-
-#contentHeader li:hover {
-    text-shadow: 2px 2px 2px rgb(61, 165, 255);
-    transform: rotate(5deg) scale(1.3);   
-    transition: 0.5s ease-in-out;
-}
+}  
 
 #contentHeader a {
     text-decoration: none;
     color: rgb(255, 211, 130);
 }
 
+/*  main */
 
-@media (max-width: 430px) {
-    .container {
-        width: 100%;
-    }
+.background-With-Color-aboutme {
+    background-color: rgb(198, 197, 255);
+}
+
+.flex-about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
 
 
-    #Profile {
-        width: 150px;
-        height: 150px;
-        background: url(../img/WhatsApp\ Image\ 2024-04-10\ at\ 21.34.35_e671bb24.jpg) center center ;
-        background-size: cover;
-        border-radius: 50%;
-    
-    }
-
-    #contentHeader h1{
-        font-size: 13vw;
-        
-    }
-
-    #contentHeader ul li{
-        font-size: 6vw;
-        display: block;
-        margin: 5px 10px;
-    }
+#imgDesk{
+    background: url(../img/backaboutme.avif) no-repeat center;
+    background-size: cover;
+    width: 50vw;
+    height: 50vw;
+    min-height: 100px;
+    min-width: 100px;
+    max-width: 300px;
+    max-height: 300px;
 
 }
 
+#content-about > div:nth-child(2){
+    width: 90%;
+}
+
+#content-about > div p{
+    font-weight: bold;
+    font-family:monospace;
+    font-size: clamp(8px, 3vw, 30px);
+}
+
+:not(p) + p {
+    text-indent: 20px;
+}
+
+
+
+/*  */
+
+@media (min-width: 600px) {
+    #Profile {
+        width: 35vw;
+        height: 35vw;
+        background: url(../img/Thumb.jpg) center center ;
+        background-size: cover;
+        border-radius: 50%;
+    }
+    
+    #contentHeader h1{
+        font-size: 13vw;
+        color: rgb(240, 168, 34);
+        transform: rotate(-8deg);
+    }
+    
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    
+    #contentHeader ul li{
+        font-size: 5vw;
+        display: block;
+        margin: 5px 10px;
+    }
+    
+    .icon {
+        width: 6.5vw;
+        height: 6.5vw;
+        margin: 0 6.5px;
+    }  
+    
+    #contentHeader a {
+        text-decoration: none;
+        color: rgb(255, 211, 130);
+    }
+    
+    /*  main */
+    
+    
+    #content-about > div p{
+        text-align: justify;
+        font-weight: bold;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: clamp(10px, 2vw, 30px);
+    }
+    
+   
+
+    
+}
+
+
+
+@media (min-width: 800px) {
+    header {
+        background: url(../img/graffite-desktop.jpg) center center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+    
+    #Profile {
+        width: 210px;
+        height: 210px;
+        background: url(../img/Thumb.jpg) center center ;
+        background-size: cover;
+        border-radius: 50%;
+        box-shadow: 3px 2px 4px rgba(255, 166, 0, 0.61);
+        text-indent: 999999px;
+    }
+    
+    #Profile:hover {
+        transform: scale(1.1);
+        text-shadow: 5px 5px 5px rgba(255, 166, 0, 0.826);
+        transition: 0.5s ease-in-out;
+    }
+    
+    #contentHeader h1{
+        font-size: 70px;
+        color: rgb(240, 168, 34);
+        transform: rotate(-8deg);
+    }
+    
+    #contentHeader h1:hover{
+        transform: scale(1.2 ) rotate(-8deg);
+        text-shadow: 2px 2px 2px black;
+        transition: 0.5s ease-in-out;
+    }
+    
+    
+    #contentHeader ul li{
+        font-size: 30px;
+        display: inline-block;
+        margin: 0px 10px;
+    }
+    
+    
+    #contentHeader li:hover {
+        text-shadow: 2px 2px 2px rgb(61, 165, 255);
+        transform: rotate(5deg) scale(1.3);   
+        transition: 0.5s ease-in-out;
+    }
+    
+    .icon {
+        width: 35px;
+        height: 35px;
+        margin: 0 6.5px;
+    }  
+
+
+    /* Main */
+
+    .flex-about-me {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+    }
+    
+    
+    #imgDesk{
+        background: url(../img/backaboutme.avif) no-repeat center;
+        background-size: cover;
+        height: 30vw;
+        width: 30vw;
+    }
+    
+    #content-about > div:nth-child(2){
+        width: 100%;
+    }
+
+    #content-about > div:nth-child(2) p{
+        width: 70%;
+    }
+    
+    #content-about > div p{
+        text-align: justify;
+        font-weight: bold;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: clamp(10px, 1.5vw, 30px);
+    }
+
+
+
+
+}
+
+
+
+
+    
