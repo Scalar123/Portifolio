@@ -1,282 +1,134 @@
 * {
-    margin: 0;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+* , html, body {
     padding: 0;
+    margin: 0;
+    
 }
 
-@font-face {
-    font-family: River;
-    src: url(../font/blank_river/Blank\ River.ttf);
-}
 
-html {
-    background-color: rgba(58, 58, 186, 0.596);
-}
-
-body {
-    font-family: river , system-ui,  'Segoe UI',  'Open Sans', 'Helvetica Neue', sans-serif;
-}
 
 header {
-    background: url(../img/) center center;
-    background-size: cover;
-    border-bottom: 1px solid orange;
+    height: 10vh;
+    border-bottom: 1px solid white;
+    background-color: #2D64FA;
+    
 }
 
-
-.textcenter {
-    text-align: center;
-}
-
-.backgroundWithColor {
-    background: linear-gradient(rgba(138, 138, 138, 0.596), rgba(230, 0, 255, 0.16));
-}
-
-.fullHeight {
-    height: 100vh; 
-}
-
-.grid {
-    display: grid;
-}
-
-h1 {
-    font-size: clamp(14px, 10vw, 40px);
-    color: rgb(240, 168, 34);
-}
-
-
-.flex-header, .flexcenter {
+.flex-header {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    height: inherit;
+
+  
 }
 
-
-
-
-#Profile {
-    width: 35vw;
-    height: 35vw;
-    background: url(../img/Thumb.jpg) center center ;
-    background-size: cover;
-    border-radius: 50%;
-}
-
-#contentHeader h1{
-    font-size: 10vw;
-    color: rgb(240, 168, 34);
-    transform: rotate(-8deg);
-}
-
-ul {
+header h1 {
+    font-family: "Jacquard 12", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(50px, 20vw, 70px);
     margin: 0;
-    padding: 0;
 }
 
-#contentHeader ul li{
-    font-size: 5vw;
-    display: block;
-    margin: 5px 10px;
-}
-
-.icon {
-    width: 6vw;
-    height: 6vw;
-    margin: 0 6.5px;
-}  
-
-#contentHeader a {
-    text-decoration: none;
-    color: rgb(255, 211, 130);
-}
-
-/*  main */
-
-.background-With-Color-aboutme {
-    background-color: rgb(198, 197, 255);
-}
-
-.flex-about-me {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-}
-
-
-#imgDesk{
-    background: url(../img/backaboutme.avif) no-repeat center;
-    background-size: cover;
-    width: 50vw;
-    height: 50vw;
-    min-height: 100px;
-    min-width: 100px;
-    max-width: 300px;
-    max-height: 300px;
-
-}
-
-#content-about > div:nth-child(2){
-    width: 90%;
-}
-
-#content-about > div p{
-    font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: clamp(8px, 3vw, 30px);
-}
-
-
-/*  */
-
-@media (min-width: 600px) {
-    #Profile {
-        width: 35vw;
-        height: 35vw;
-        background: url(../img/Thumb.jpg) center center ;
-        background-size: cover;
-        border-radius: 50%;
-    }
-    
-    #contentHeader h1{
-        font-size: 13vw;
-        color: rgb(240, 168, 34);
-        transform: rotate(-8deg);
-    }
-    
-    ul {
-        margin: 0;
-        padding: 0;
-    }
-    
-    #contentHeader ul li{
-        font-size: 5vw;
-        display: block;
-        margin: 5px 10px;
-    }
-    
-    .icon {
-        width: 6.5vw;
-        height: 6.5vw;
-        margin: 0 6.5px;
-    }  
-    
-    #contentHeader a {
-        text-decoration: none;
-        color: rgb(255, 211, 130);
-    }
-    
-    /*  main */
-    
-    
-    #content-about > div p{
-        font-weight: bold;
-        font-size: clamp(10px, 1.2em, 30px);
-    }
-    
+#button-nav-header{
+    height: 60px;
+    width: 45px;
+    border-radius: 10px;
+    background-color: #2D64FA;
+    border: none;
+    position: relative;
    
-
-    
 }
 
 
+#button-nav-header::after,
+#button-nav-header::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 20px;
+    height: 3px;
+}
 
-@media (min-width: 800px) {
-    header {
-        background: url(../img/graffite-desktop.jpg) center center;
-        background-size: cover;
-        background-attachment: fixed;
-    }
-    
-    
-    #Profile {
-        width: 210px;
-        height: 210px;
-        background: url(../img/Thumb.jpg) center center ;
-        background-size: cover;
-        border-radius: 50%;
-        box-shadow: 3px 2px 4px rgba(255, 166, 0, 0.61);
-        text-indent: 999999px;
-    }
-    
-    #Profile:hover {
-        transform: scale(1.1);
-        text-shadow: 5px 5px 5px rgba(255, 166, 0, 0.826);
-        transition: 0.5s ease-in-out;
-    }
-    
-    #contentHeader h1{
-        font-size: 70px;
-        color: rgb(240, 168, 34);
-        transform: rotate(-8deg);
-    }
-    
-    #contentHeader h1:hover{
-        transform: scale(1.2 ) rotate(-8deg);
-        text-shadow: 2px 2px 2px black;
-        transition: 0.5s ease-in-out;
-    }
-    
-    
-    #contentHeader ul li{
-        font-size: 30px;
-        display: inline-block;
-        margin: 0px 10px;
-    }
-    
-    
-    #contentHeader li:hover {
-        text-shadow: 2px 2px 2px rgb(61, 165, 255);
-        transform: rotate(5deg) scale(1.3);   
-        transition: 0.5s ease-in-out;
-    }
-    
-    .icon {
-        width: 35px;
-        height: 35px;
-        margin: 0 6.5px;
-    }  
+#button-nav-header::after {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    transition: 0.2s linear;
 
+}
 
-    /* Main */
+#button-nav-header::before {
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 0.2s linear;
+}
+#button-nav-header:hover {
+    border: 2px solid black;
 
-    .flex-about-me {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: start;
-    }
-    
-    
-    #imgDesk{
-        background: url(../img/backaboutme.avif) no-repeat center;
-        background-size: cover;
-        height: 30vw;
-        width: 30vw;
-    }
-    
-    #content-about > div:nth-child(2){
-        width: 100%;
-    }
+}
 
-    #content-about > div:nth-child(2) p{
-        width: 70%;
-    }
-    
-    #content-about > div p{
-        text-align: justify;
-        font-weight: bold;
-        font-family:Arial, Helvetica, sans-serif;
-        font-size: clamp(10px, 1.5vw, 30px);
-    }
+#button-nav-header:hover::after{
+    transform: rotate(-50deg)translate(-0%);
+    left: 30%;
+    top: 50%;
+    transition: 0.2s linear;
+}
 
+#button-nav-header:hover::before{
+    transform: rotate(50deg) translate(-0%);
+    left: 30%;
+    top: 50%;
+    transition: 0.2s linear;
+}
 
+header nav {
+    display: none;
+    position: absolute;
+    top: 62px;
+    left: -35px;
+    right: 0px;
+}
 
+header #button-nav-header:hover + nav{
+    display: block;
+}
+
+header nav:hover {
+    display: block;
+}
+
+header li {
+    padding: 15px;
+    padding-left: 40px;
+    text-align: left;
+    list-style: none;
+    background-color: #2690DD;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.169);
+    text-transform: uppercase;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
 
 }
 
 
+main {
+    background-color: #2D64FA;
+    height: 90vh;
+}
+
+.full-viewport {
+    height: 100vh;
+}
 
 
-    
