@@ -4,19 +4,22 @@
     margin: 0px;
 }
 
-* , html, body {
+*
+ {
     padding: 0;
     margin: 0;
-    
+
 }
 
-
+html,body {
+    background-color: rgb(45, 100, 250);
+}
 
 header {
     height: 70px;
     border-bottom: 1px solid white;
     background-color: #2D64FA;
-    
+
 }
 
 .flex-header {
@@ -25,7 +28,6 @@ header {
     justify-content: space-between;
     height: inherit;
 
-  
 }
 
 header h1 {
@@ -36,14 +38,14 @@ header h1 {
     margin: 0;
 }
 
-#button-nav-header{
+#button-nav-header {
     height: 4rem;
     width: 45px;
     border-radius: 10px;
     background-color: #2D64FA;
     border: none;
     position: relative;
-   
+
 }
 
 
@@ -59,7 +61,7 @@ header h1 {
 #button-nav-header::after {
     top: 50%;
     left: 50%;
-    transform: translate(-50%,0%);
+    transform: translate(-50%, 0%);
     transition: 0.2s linear;
 
 }
@@ -67,23 +69,23 @@ header h1 {
 #button-nav-header::before {
     top: 45%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     transition: 0.2s linear;
 }
 
-.hover-open:hover #button-nav-header{
+.hover-open:hover #button-nav-header {
     border: 2px solid black;
 
 }
 
-.hover-open:hover #button-nav-header:after{
+.hover-open:hover #button-nav-header:after {
     transform: rotate(-50deg)translate(-0%);
     left: 30%;
     top: 50%;
     transition: 0.2s linear;
 }
 
-.hover-open:hover #button-nav-header:before{
+.hover-open:hover #button-nav-header:before {
     transform: rotate(50deg) translate(-0%);
     left: 30%;
     top: 50%;
@@ -100,7 +102,7 @@ header nav {
     right: 0px;
 }
 
-header #button-nav-header:hover + nav{
+header #button-nav-header:hover+nav {
     display: block;
 }
 
@@ -119,22 +121,27 @@ header li {
     list-style: none;
     background-color: #2690DD;
     border-bottom: 2px solid rgba(0, 0, 0, 0.169);
-    text-transform: uppercase;
+    font-family: "Prompt", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    text-transform: capitalize;
 }
 
-header a {
+h1 a {
+    color: black;
+    text-decoration: none;
+}
+
+header nav a {
     color: rgb(255, 240, 240);
     text-decoration: none;
 }
 
-header li:first-child {
-    background-color: rgb(12, 12, 118);
 
-}
 
 main {
     background-color: #2D64FA;
-    height: 85vh;
+    height: 89vh;
 }
 
 .full-viewport {
@@ -142,3 +149,65 @@ main {
 }
 
 
+@media (min-width: 770px) {
+    .flex-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: inherit;
+    }
+
+    header h1 a:hover{
+        animation: colorslogo 3s linear 0s infinite forwards;
+
+    }
+
+    #button-nav-header {
+        display: none;
+    }
+
+
+    header nav {
+        display: inline-block;
+        position: static;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    header ul {
+        margin: 0px;
+    }
+
+    header li {
+        display: inline-block;
+        padding: 7px;
+        text-align: right;
+        list-style: none;
+        background-color: transparent;
+        border-bottom: none;
+        font-family: "Prompt", sans-serif;
+        font-weight: 300;
+        font-style: italic;
+        text-transform: capitalize;
+
+    }
+
+
+    header li:hover {
+        border: 1px solid  rgba(0, 0, 0, 0.338);
+        border-radius: 10px;
+    }
+}
+
+@keyframes colorslogo {
+    from {
+        color: black;
+    }
+
+    50% {
+        color: gold;
+    }
+
+    100% {
+        color: #2B274C;
+    }
+}
